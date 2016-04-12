@@ -1,0 +1,29 @@
+.mandatory {
+    color: red;
+    font-size: 12px;
+    vertical-align: super;
+}
+
+.alert {
+    padding: 5px;
+    font-size: 12px;
+}
+.alert-danger {
+    color: red;
+}
+
+/**
+    Create user
+**/
+.customers_create .house_number, .customers_create .house_number_ad {
+    width: 80px !important;
+}
+.customers_create .zipcode {
+    width: 75px !important;
+}
+.mandatory-note {
+    margin-top: 15px;
+    padding-top: 5px;
+    font-size: 14px;
+    border-top: 1px solid rgba(109, 109, 109, 0.2);
+}

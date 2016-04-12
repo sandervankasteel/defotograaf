@@ -1,0 +1,49 @@
+body {
+
+}
+
+#photo_list {
+    list-style: none;
+
+}
+
+#photo_list li ul {
+    border: solid;
+    /*max-width: 10%;*/
+
+}
+#photo_list li {
+    /*border-style: groove;*/
+    /*margin: 1em;*/
+    margin-bottom: 30px;
+    border-bottom: solid;
+}
+
+#photo_list canvas {
+    /*max-width: 10%;*/
+}
+
+#photos {
+    /*align-items: center;*/
+}
+
+#buttons li {
+    list-style: none;
+    display: inline;
+}
+
+#file_list {
+    display: none;
+}
+
+#fit-in-selector {
+    position: absolute;
+    border-width: 150px;
+    border: solid;
+    border-color: red;
+}
+
+#photoPreview li {
+    list-style: none;
+    display: inline;
+}

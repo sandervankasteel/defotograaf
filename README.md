@@ -1,1 +1,1 @@
-# defotograaf
+Om de database verbinding te laten werken is het noodzakelijk om in de config map het bestand "Database.template" te hernoemen naar "Database.php" en de variable in te vullen.

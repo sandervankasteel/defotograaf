@@ -1,0 +1,60 @@
+<?php
+/**
+ * Remco Schipper
+ * Date: 04/12/14
+ * Time: 18:41
+ */
+
+namespace config;
+
+class Mail {
+    public static $USERNAME = '';
+    public static $PASSWORD = '';
+    public static $HOST = '';
+    public static $PORT = null;
+    public static $AUTH = true;
+    public static $SSL = 'tls';
+
+    public static $FROM = '';
+    public static $NAME = '';
+
+    public static $PARAMS = array(
+        'klant' => array(
+            'voornaam' => array('message' => 'Dit is de voornaam van de geaddresseerde'),
+            'achternaam' => array('message' => 'Dit is de achternaam van de geaddresseerde'),
+            'email' => array('message' => 'Dit is het e-mail adres van de geaddresseerde'),
+            'telefoon' => array('message' => 'Dit is het telefoonnummer van de geaddresseerde')
+        ),
+        'adres' => array(
+            'straat' => array('message' => 'Dit is het adres van de geaddresseerde'),
+            'huisnummer' => array('message' => 'Dit is het huisnummer van de geaddresseerde'),
+            'toevoeging' => array('message' => 'Dit is de toevoeging van het huisnummer'),
+            'postcode' => array('message' => 'Dit is de postcode van de geaddresseerde'),
+            'woonplaats' => array('message' => 'Dit is de woonplaats van de geaddresseerde')
+        ),
+        'special' => array(
+            'status' => array(
+                'status' => array('beschrijving' => array('message' => 'Dit is de beschrijving van de status')),
+                'bestelling' => array(
+                    'order_id' => array('message' => 'Dit is het id van de bestelling'),
+                    'order_datum' => array('message' => 'Dit is de datum waarop de bestelling geplaatst is')
+                )
+            )
+        )
+    );
+
+    public static $PARAM_TO_VALUE = array(
+        'beschrijving' => array('entity' => 'OrderStatus', 'method' => 'getDescription'),
+        'voornaam' => array('entity' => 'User', 'method' => 'getFirstName'),
+        'achternaam' => array('entity' => 'User', 'method' => 'getLastName'),
+        'email' => array('entity' => 'User', 'method' => 'getEmail'),
+        'telefoon' => array('entity' => 'User', 'method' => 'getPhoneNumber'),
+        'straat' => array('entity' => 'Address', 'method' => 'getStreet'),
+        'huisnummer' => array('entity' => 'Address', 'method' => 'getHouseNumber'),
+        'toevoeging' => array('entity' => 'Address', 'method' => 'getHouseNumberAd'),
+        'postcode' => array('entity' => 'Address', 'method' => 'getZipCode'),
+        'woonplaats' => array('entity' => 'Address', 'method' => 'getCity'),
+        'order_id' => array('entity' => 'Order', 'method' => 'getId'),
+        'order_datum' => array('entity' => 'Order', 'method' => 'getDate')
+    );
+}

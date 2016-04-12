@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+*:focus {
+    outline: 0;
+}
+html {
+    overflow-y: scroll;
+}
+.clear {
+    clear: both;
+}
+body {
+    background: #f4f4f4;
+    font-family: 'Open Sans', sans-serif;
+}
+.wrap {
+    width: 1000px;
+    margin: auto;
+}
+header {
+    width: 100%;
+    min-width: 1000px;
+    height: 85px;
+    background: #fff;
+}
+header .headerLogo {
+    float: left;
+    margin-top: 9px;
+    width: 320px;
+}
+header nav {
+    padding-top: 50px;
+}
+header nav ul.menu li.menu-item {
+    float: left;
+    display: inline-block;
+    margin: 0 5px;
+    margin-top: -10px;
+}
+header nav ul.menu li.menu-item ul.sub-menu li.sub-menu-item:hover,
+header nav ul.menu li.menu-item.current_menu_item,
+header nav ul.menu li.menu-item.current_page_item,
+header nav ul.menu li.menu-item:hover {
+    border-bottom: 3px solid #fce351;
+}
+header nav ul.menu li.menu-item ul.sub-menu li.sub-menu-item a,
+header nav ul.menu li.menu-item a {
+    display: block;
+    text-decoration: none;
+    color: #575757;
+    padding: 10px 10px  0px 10px;
+    height: 32px;
+}
+/*Sub menu*/
+header nav ul.menu li.menu-item ul.sub-menu li.sub-menu-item {
+    list-style-type: none;
+    display: inline-block;
+    padding-top: 5px;
+    background: white;
+    border-bottom: 3px solid white;
+    width: 150px;
+}
+header nav ul.menu li.menu-item ul.sub-menu li.sub-menu-item a {
+    display:inline-block;
+}
+header nav ul.menu li.menu-item ul.sub-menu li.sub-menu-item:hover a {
+    color: #000;
+}
+header nav ul.menu li.menu-item {
+    position: relative;
+}
+header nav ul.menu li.menu-item ul.sub-menu {
+    display:none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    padding-top: 10px;
+}
+header nav ul.menu li.menu-item:hover ul.sub-menu {
+    display:block;
+    margin-top: 5px;
+}
+header nav ul.menu li.menu-item.userPanel {
+    float: right;
+    background: #f3f3f3  !important;
+    border-bottom: 3px solid #fce351;
+    width: 150px;
+}
+header nav ul.menu li.menu-item.userPanel ul.sub-menu li.sub-menu-item {
+    width: 150px;
+}
+
+
+/*Title*/
+h1.pageTitle {
+    text-align: center;
+    font-weight: 300;
+    margin: 80px 0;
+    font-size: 50px;
+    color: #736f6e;
+    min-width: 1000px;
+}
+
+/*Content*/
+section#content {
+    width: 960px;
+    margin: 25px auto 0 auto;
+    padding: 20px;
+    background-color: #fff;
+}
+section#content p {
+    color: #000;
+    font-weight: 400;
+    font-size: 16px;
+}
+section#content h1 {
+    font-size: 30px;
+}
+section#content h2 {
+    font-size: 25px;
+}
+section#content h1, section#content h2, section#content h3, section#content h4, section#content h5, section#content h6 {
+    font-weight: 400;
+    color: #000;
+}
+section#content a {
+    color: #0075cd;
+    text-decoration: underline;
+}
+section#content a:hover {
+    color: #007fde;
+    text-decoration: none;
+}
+
+/*Input styling*/
+section#content input[type=number],
+section#content input[type=email],
+section#content input[type=tel],
+section#content input[type=text],
+section#content input[type=password],
+section#content select {
+    width: 200px;
+    background: #fff;
+    border: 1px solid #dadada;
+    padding: 5px 10px;
+    font-family: 'Open Sans', sans-serif;
+    color: #3d3d3d;
+}
+section#content select {
+    width: 222px;
+}
+section#content textarea {
+    background: #fff;
+    border: 1px solid #dadada;
+    padding: 5px 10px;
+    font-family: 'Open Sans', sans-serif;
+    color: #3d3d3d;
+}
+section#content input[type=number]:hover,
+section#content input[type=email]:hover,
+section#content input[type=tel]:hover,
+section#content input[type=text]:hover,
+section#content input[type=password]:hover,
+section#content select:hover,
+section#content textarea:hover {
+    border: 1px solid #c4c4c4;
+}
+section#content input[type=submit],
+section#content button {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 17px;
+    font-weight: lighter;
+    background: #fcda18;
+    border-radius: 5px;
+    border: 0;
+    opacity: 0.8;
+    transition: opacity .3s ease-in-out;
+    cursor: pointer;
+}
+section#content input[type=submit]:hover,
+section#content button:hover {
+    opacity: 1;
+}
+section#content input[type=submit].large-button,
+section#content button.large-button {
+    padding: 30px 20px;
+}
+section#content input[type=submit].medium-button,
+section#content button.medium-button {
+    padding: 20px 15px;
+}
+section#content input[type=submit].small-button,
+section#content button.small-button {
+    padding: 10px 15px;
+}
+
+/*List styling*/
+section#content ul {
+    margin-left: 50px;
+}
+
+/*Table styling*/
+section#content table,
+section#content table tr td,
+section#content table tr th {
+    border: 1px solid #dadada;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: left;
+}
+section#content table#orderView {
+    margin: 25px 0;
+    width: 100%;
+}
+section#content table#orderView tr td.alignRight {
+    text-align: right;
+}
+section#content table#orderView tr td.empty {
+    border: 0 !important;
+}
+section#content span.customerDetail {
+    font-weight: 600;
+    min-width: 200px;
+    display: inline-block;
+}
+section#content table tr th {
+    background: #dadada;
+    text-align: left;
+    font-weight: 600;
+}
+/*Footer*/
+footer {
+    background: #e0e0e0;
+    border-top: 1px solid #a7a7a7;
+    border-bottom: 3px solid #fcda18;
+    padding: 30px 0;
+    width: 100%;
+    margin-top: 50px;
+    min-width: 1000px;
+}
+footer section.footerLeft {
+    float: left;
+    width: 210px;
+}
+footer section.footerLeft p {
+    margin-top: 15px;
+}
+section.footerMiddle {
+    float: left;
+    width: 400px;
+    margin-right: 50px;
+}
+section.footerRight {
+    float: left;
+    width: 325px;
+}
+section.footerLeft,
+section.footerRight,
+section.footerMiddle p {
+    font-size: 13px;
+    font-weight: 300;
+    color: #575757;
+}
+footer h1 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #5d5d5d;
+    padding-bottom: 10px;
+}
+footer span.bigText {
+    font-size: 22px;
+    font-weight: 300;
+    color: #575757;
+}
